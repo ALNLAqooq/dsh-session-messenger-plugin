@@ -4,14 +4,14 @@
   "description": "Session Messenger: hand off work between top-level DeepSeek Harness sessions in the same workspace.",
   "type": "module",
   "license": "MIT",
-  "author": "pjwang",
+  "author": "ALNLAqooq",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin.git"
+    "url": "git+https://github.com/ALNLAqooq/dsh-session-messenger-plugin.git"
   },
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin#readme",
+  "homepage": "https://github.com/ALNLAqooq/dsh-session-messenger-plugin#readme",
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin/issues"
+    "url": "https://github.com/ALNLAqooq/dsh-session-messenger-plugin/issues"
   },
   "keywords": [
     "dsh",

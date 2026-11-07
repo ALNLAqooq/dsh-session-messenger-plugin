@@ -27,7 +27,7 @@ accepted, and the recipient's answer stays in the recipient's session.
 ### From a local clone
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin.git
+git clone https://github.com/ALNLAqooq/dsh-session-messenger-plugin.git
 ```
 
 Then ask DSH to install the bundle, using the **absolute path** of the clone as
@@ -249,7 +249,7 @@ MIT. See [LICENSE](LICENSE).
 
 **安装**：
 
-1. `git clone https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin.git`
+1. `git clone https://github.com/ALNLAqooq/dsh-session-messenger-plugin.git`
 2. 在 DSH 里让智能体执行
    `plugin_manager action=install_bundle target=<仓库绝对路径>`。
    如果之前装过开发版 `@local/session-messenger`，先执行
