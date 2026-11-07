@@ -15,16 +15,34 @@ Delivery is fire-and-forget: the sender returns as soon as the message is
 accepted, and the recipient's answer stays in the recipient's session.
 
 > Published on npm as [`dsh-session-messenger-plugin`](https://www.npmjs.com/package/dsh-session-messenger-plugin).
+>
+> **Community project.** Not affiliated with, endorsed by, or maintained by
+> DeepSeek AI.
 
 ## Requirements
 
 - A DSH desktop build with plugin support and the Web UI.
-- The DSH Plugin Manager (the agent-facing `plugin_manager` tool is enough).
+- The `dsh` CLI with `dsh plugin` support (or the agent-facing `plugin_manager`
+  tool for local development).
 - No build step: the plugin is plain ESM plus a browser module.
 
 ## Install
 
-### From a local clone
+### From npm (recommended)
+
+```bash
+dsh plugin --profile web add dsh-session-messenger-plugin
+```
+
+Replace `web` with your DSH profile name if it is different.
+
+### From source
+
+```bash
+dsh plugin --profile web add github:ALNLAqooq/dsh-session-messenger-plugin
+```
+
+### Local clone (development)
 
 ```bash
 git clone https://github.com/ALNLAqooq/dsh-session-messenger-plugin.git
@@ -43,12 +61,6 @@ duplicate tools and UI:
 
 ```text
 plugin_manager action=remove_bundle target=@local/session-messenger
-```
-
-### From npm
-
-```text
-plugin_manager action=install_bundle target=dsh-session-messenger-plugin
 ```
 
 After installing, refresh the Web UI. If the client half does not hot-reload,
@@ -249,12 +261,14 @@ MIT. See [LICENSE](LICENSE).
 
 **安装**：
 
-1. `git clone https://github.com/ALNLAqooq/dsh-session-messenger-plugin.git`
-2. 在 DSH 里让智能体执行
-   `plugin_manager action=install_bundle target=<仓库绝对路径>`。
-   如果之前装过开发版 `@local/session-messenger`，先执行
-   `plugin_manager action=remove_bundle target=@local/session-messenger`。
+1. 推荐从 npm 安装：
+   `dsh plugin --profile web add dsh-session-messenger-plugin`
+   （`web` 换成你的 DSH profile 名）。
+2. 或从 GitHub 源码安装：
+   `dsh plugin --profile web add github:ALNLAqooq/dsh-session-messenger-plugin`
 3. 刷新 Web UI；如果客户端没有热更新，重启 DSH。
+
+> 本项目是社区项目，与 DeepSeek AI 无隶属关系，也不代表官方。
 
 **使用**：
 
