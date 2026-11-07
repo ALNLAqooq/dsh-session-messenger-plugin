@@ -1,0 +1,4 @@
+- insert:
+    - id: session-messenger
+      name: dsh-session-messenger-plugin
+      config: {}

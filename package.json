@@ -1,0 +1,53 @@
+{
+  "name": "dsh-session-messenger-plugin",
+  "version": "0.1.0",
+  "description": "Session Messenger: hand off work between top-level DeepSeek Harness sessions in the same workspace.",
+  "type": "module",
+  "license": "MIT",
+  "author": "pjwang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin.git"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/dsh-session-messenger-plugin/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "session",
+    "messenger",
+    "handoff"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
