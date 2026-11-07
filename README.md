@@ -14,7 +14,7 @@ Both paths deliver plain text through the session controller in `queue` mode.
 Delivery is fire-and-forget: the sender returns as soon as the message is
 accepted, and the recipient's answer stays in the recipient's session.
 
-> The npm package is not published yet. Install from a local clone for now.
+> Published on npm as [`dsh-session-messenger-plugin`](https://www.npmjs.com/package/dsh-session-messenger-plugin).
 
 ## Requirements
 
@@ -45,7 +45,7 @@ duplicate tools and UI:
 plugin_manager action=remove_bundle target=@local/session-messenger
 ```
 
-### From npm (after the first release)
+### From npm
 
 ```text
 plugin_manager action=install_bundle target=dsh-session-messenger-plugin
